@@ -13,11 +13,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of the application code
 COPY . .
 
-# Set environment variables
-ENV TELEGRAM_TOKEN=your_telegram_token_here
-
 # Expose any necessary ports (if applicable)
 # EXPOSE 8080
 
 # Run the bot
-CMD ["python", "bot.py"]
+CMD ["python", "bot.py"]a
