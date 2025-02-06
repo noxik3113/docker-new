@@ -1,0 +1,5 @@
+build:
+  docker:
+    web: Dockerfile  # Path to your Dockerfile
+run:
+  web: python bot.py  # Command to run your app
