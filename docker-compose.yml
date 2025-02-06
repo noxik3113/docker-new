@@ -1,8 +1,7 @@
-version: '3.8'  # Use the correct version of Docker Compose
-
+version: '3.8'
 services:
-  bot:  # Service name
-    build: .  # Build the Docker image from the current directory
+  bot:
+    build: .
     environment:
-      - TELEGRAM_TOKEN=${TELEGRAM_TOKEN}  # Environment variable
-    restart: unless-stopped  # Automatically restart the container if it stops
+      - TELEGRAM_TOKEN=${TELEGRAM_TOKEN}
+    restart: unless-stopped
