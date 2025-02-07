@@ -4,4 +4,6 @@ services:
     build: .
     environment:
       - TELEGRAM_TOKEN=${TELEGRAM_TOKEN}
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock  # Mount Docker socket
     restart: unless-stopped
